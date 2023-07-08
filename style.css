@@ -346,7 +346,6 @@ nav ul li ion-icon {
   flex-direction: column;
   place-items: center;
   place-content: center;
-  border: 1px solid red;
   background: url(./img/banner/b2.jpg) no-repeat;
   background-size: cover;
   background-position: right -5px;
@@ -386,7 +385,6 @@ nav ul li ion-icon {
   display: flex;
   flex-direction: column;
   place-items: center;
-  border: 1px solid red;
   gap: 30px;
   width: 100%;
   padding: 40px 80px;
@@ -543,7 +541,6 @@ footer {
   place-items: flex-start;
   place-content: center;
   background: #fff;
-  border: solid red;
   max-width: 1450px;
   width: 100%;
   padding: 60px;
