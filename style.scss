@@ -1162,6 +1162,11 @@ footer {
   
   footer {
     padding: 60px $sm-section-px;
+
+    .col{
+      @include flexCenter(flex, row, flex-start, flex-start);
+      gap: 60px;
+    }
   
     .iv{
       .store{
