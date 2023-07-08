@@ -594,7 +594,8 @@ footer .iv .store {
   place-content: space-between;
   gap: 7px;
 }
-footer .iv .store .app, footer .iv .store .play {
+footer .iv .store .app,
+footer .iv .store .play {
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -608,10 +609,12 @@ footer .iv .store .app, footer .iv .store .play {
   width: 160px;
   height: 48px;
 }
-footer .iv .store .app:hover, footer .iv .store .play:hover {
+footer .iv .store .app:hover,
+footer .iv .store .play:hover {
   scale: 1.02;
 }
-footer .iv .store .app img, footer .iv .store .play img {
+footer .iv .store .app img,
+footer .iv .store .play img {
   height: 90.5%;
   width: 100%;
   -o-object-fit: cover;
@@ -639,6 +642,21 @@ footer .follow .socials a {
 }
 footer .follow .socials a:hover {
   color: #088178;
+}
+
+/* SHOP PAGE BELOW */
+.shop header {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  background: url(./img/banner/b1.jpg) no-repeat;
+  background-size: cover;
+  height: 260px;
+}
+.shop header h1,
+.shop header p {
+  color: #fff;
 }
 
 @media only screen and (width < 1280px) {
@@ -1056,10 +1074,12 @@ footer .follow .socials a:hover {
     flex-wrap: wrap;
     margin-block: 15px;
   }
-  footer .iv .store .app, footer .iv .store .play {
+  footer .iv .store .app,
+  footer .iv .store .play {
     margin-block: 5px;
   }
-  footer .iv .store .app:hover, footer .iv .store .play:hover {
+  footer .iv .store .app:hover,
+  footer .iv .store .play:hover {
     scale: 1.02;
   }
   footer small {

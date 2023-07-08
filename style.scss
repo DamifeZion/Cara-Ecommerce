@@ -80,7 +80,6 @@ $max-width: 1450px;
       width: 45%;
 
       .txt {
-
         span {
           padding: 3px 5px;
 
@@ -95,7 +94,7 @@ $max-width: 1450px;
 
 //STYLES BELOW
 
-body{
+body {
   user-select: none;
 }
 
@@ -710,28 +709,29 @@ footer {
     font-size: 13px;
   }
 
-  .iv{
-    .store{
+  .iv {
+    .store {
       @include flexCenter(flex, row, center, space-between);
       gap: 7px;
 
-      .app, .play{
+      .app,
+      .play {
         @include flexCenter(flex, column, center, center);
         background-color: $accent-color2;
         border-radius: 10px;
-        box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
         cursor: pointer;
-        transition: .2s;
+        transition: 0.2s;
 
         margin-block: 15px;
         width: 160px;
         height: 48px;
 
-        &:hover{
+        &:hover {
           scale: 1.02;
         }
 
-        img{
+        img {
           height: 90.5%;
           width: 100%;
           object-fit: cover;
@@ -740,13 +740,12 @@ footer {
       }
     }
 
-    .pay{
+    .pay {
       margin-top: 20px;
     }
   }
 
-  .follow{
-
+  .follow {
     h4 {
       font-size: 14px;
       font-weight: 700;
@@ -754,18 +753,35 @@ footer {
 
     .socials {
       @include flexCenter(flex, row, center, space-between);
-      
+
       margin-top: 20px;
       gap: 10px;
 
       a {
         font-size: 20px;
-        transition: .2s;
+        transition: 0.2s;
 
-        &:hover{
+        &:hover {
           color: $accent-color2;
         }
       }
+    }
+  }
+}
+
+/* SHOP PAGE BELOW */
+
+.shop {
+  header {
+    @include flexCenter(flex, column, center, center);
+    background: url(./img/banner/b1.jpg) no-repeat;
+    background-size: cover;
+
+    height: 260px;
+
+    h1,
+    p {
+      color: #fff;
     }
   }
 }
@@ -902,31 +918,30 @@ footer {
   }
 
   .s6 {
-  
     .newsletter {
       padding: $md-section-px;
-  
+
       .txt {
         h1 {
           font-size: 18px;
         }
-  
+
         p {
-          font-size: 10px;  
+          font-size: 10px;
         }
       }
-  
+
       .input {
         @include flexCenter(flex, row, center, center);
-  
+
         input {
           font-size: 12px;
-  
+
           height: 2.8rem;
           width: 210px;
         }
 
-        button{
+        button {
           height: 2.8rem;
         }
       }
@@ -934,7 +949,6 @@ footer {
   }
 
   footer {
-  
     .col {
       flex-wrap: wrap;
     }
@@ -1119,65 +1133,63 @@ footer {
   }
 
   .s6 {
-  
     .newsletter {
       @include flexCenter(flex, row, center, center);
       flex-wrap: wrap;
       gap: 30px;
-  
+
       width: 100%;
       padding: 60px $sm-section-px;
-  
+
       .txt {
         h1 {
           font-size: 20px;
           text-align: center;
         }
-  
+
         p {
           font-size: 12px;
           text-align: center;
-  
+
           span {
             color: #ffbd27;
           }
         }
       }
-  
+
       .input {
-  
         input {
           font-size: 12px;
 
           height: 2.5rem;
           width: 180px;
         }
-  
+
         button {
           height: 2.5rem;
         }
       }
     }
   }
-  
+
   footer {
     padding: 60px $sm-section-px;
 
-    .col{
+    .col {
       @include flexCenter(flex, row, flex-start, flex-start);
       gap: 60px;
     }
-  
-    .iv{
-      .store{
+
+    .iv {
+      .store {
         flex-wrap: wrap;
         margin-block: 15px;
-  
-        .app, .play{
-  
+
+        .app,
+        .play {
           margin-block: 5px;
-  
-          &:hover{
+
+          &:hover {
             scale: 1.02;
           }
         }
