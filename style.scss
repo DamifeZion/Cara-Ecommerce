@@ -660,7 +660,7 @@ nav {
 footer {
   @include flexCenter(flex, column, flex-start, center);
   background: #fff;
-  
+
   max-width: $max-width;
   width: 100%;
   padding: 60px;
@@ -750,10 +750,10 @@ footer {
       @include flexCenter(flex, row, center, space-between);
       
       margin-top: 20px;
-      gap: 6px;
+      gap: 10px;
 
       a {
-        font-size: 16px;
+        font-size: 20px;
         transition: .2s;
 
         &:hover{

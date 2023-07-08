@@ -625,10 +625,10 @@ footer .follow .socials {
   place-items: center;
   place-content: space-between;
   margin-top: 20px;
-  gap: 6px;
+  gap: 10px;
 }
 footer .follow .socials a {
-  font-size: 16px;
+  font-size: 20px;
   transition: 0.2s;
 }
 footer .follow .socials a:hover {
