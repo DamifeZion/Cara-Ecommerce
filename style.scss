@@ -448,7 +448,6 @@ nav {
 
 .s3 {
   @include flexCenter(flex, column, center, center);
-  border: 1px solid red;
   background: url(./img/banner/b2.jpg) no-repeat;
   background-size: cover;
   background-position: right -5px;
@@ -493,7 +492,6 @@ nav {
 
 .s5 {
   @include flexCenter(flex, column, center, null);
-  border: 1px solid red;
 
   gap: 30px;
   width: 100%;
@@ -503,7 +501,6 @@ nav {
 
   .lg-banner {
     @include flexCenter(flex, row, center, space-between);
-    // border: solid blue;
 
     height: 340px;
     width: 100%;
@@ -602,7 +599,6 @@ nav {
   background-repeat: no-repeat;
   background-position: 20% 30%;
 
-  // margin: $lg-section-m1;
   margin-top: 20px;
 
   .newsletter {
@@ -674,14 +670,11 @@ footer {
   .col {
     @include flexCenter(flex, row, start, space-between);
     width: 100%;
-    // border: solid green;
 
     .i {
       @include flexCenter(flex, column, flex-start, null);
-      // border: solid red;
       margin-top: 35px;
 
-      // margin-top: 10px;
       h4 {
         font-size: 14px;
         font-weight: 700;
