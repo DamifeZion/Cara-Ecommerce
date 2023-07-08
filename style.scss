@@ -660,8 +660,7 @@ nav {
 footer {
   @include flexCenter(flex, column, flex-start, center);
   background: #fff;
-  border: solid red;
-
+  
   max-width: $max-width;
   width: 100%;
   padding: 60px;
