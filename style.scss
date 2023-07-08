@@ -80,6 +80,7 @@ $max-width: 1450px;
       width: 45%;
 
       .txt {
+
         span {
           padding: 3px 5px;
 
@@ -93,6 +94,11 @@ $max-width: 1450px;
 }
 
 //STYLES BELOW
+
+body{
+  user-select: none;
+}
+
 a {
   text-decoration: none;
   color: unset;
