@@ -772,12 +772,13 @@ footer {
 /* SHOP PAGE BELOW */
 
 .shop {
+
   header {
     @include flexCenter(flex, column, center, center);
     background: url(./img/banner/b1.jpg) no-repeat;
     background-size: cover;
-
     height: 260px;
+
 
     h1,
     p {
@@ -953,6 +954,17 @@ footer {
       flex-wrap: wrap;
     }
   }
+
+  .shop {
+
+    header {
+      @include flexCenter(flex, column, center, center);
+  
+      padding: 0px 0px;
+      height: 35vh;
+    }
+  }
+  
 } //tablets
 
 @media only screen and (width <= 600px) {
@@ -1200,6 +1212,23 @@ footer {
       font-size: 10px;
     }
   }
+
+  .shop {
+
+    header {
+      @include flexCenter(flex, column, center, center);
+  
+      padding: 0px 0px;
+      height: 35vh;
+      border: solid white;
+
+      p{
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
 }
 
 @media only screen and (width <= 340px) {
@@ -1225,6 +1254,21 @@ footer {
   .s3 {
     h1 {
       font-size: 25px;
+    }
+  }
+
+  .shop {
+
+    header {
+      @include flexCenter(flex, column, center, center);
+      background-position-x: -150px;
+  
+      padding: 0px 0px;
+      height: 35vh;
+
+      p{
+        text-align: center;
+      }
     }
   }
 }

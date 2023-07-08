@@ -830,6 +830,14 @@ footer .follow .socials a:hover {
   footer .col {
     flex-wrap: wrap;
   }
+  .shop header {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    padding: 0px 0px;
+    height: 35vh;
+  }
 }
 @media only screen and (width <= 600px) {
   .menu {
@@ -1085,6 +1093,19 @@ footer .follow .socials a:hover {
   footer small {
     font-size: 10px;
   }
+  .shop header {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    padding: 0px 0px;
+    height: 35vh;
+    border: solid white;
+  }
+  .shop header p {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media only screen and (width <= 340px) {
   .s1 header {
@@ -1102,5 +1123,17 @@ footer .follow .socials a:hover {
   }
   .s3 h1 {
     font-size: 25px;
+  }
+  .shop header {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    background-position-x: -150px;
+    padding: 0px 0px;
+    height: 35vh;
+  }
+  .shop header p {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
