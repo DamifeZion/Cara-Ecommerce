@@ -166,6 +166,10 @@ h1 {
   display: none;
 }
 
+img.logo {
+  width: 120px;
+}
+
 nav {
   @include flexCenter(flex, row, center, space-between);
   background: $background;
@@ -174,10 +178,6 @@ nav {
 
   padding: 20px 80px;
   max-width: 1920px;
-
-  img {
-    width: 120px;
-  }
 
   .mobile {
     display: none;
@@ -668,7 +668,7 @@ footer {
 
   max-width: $max-width;
   width: 100%;
-  padding: 60px;
+  padding: $lg-section-p1;
   gap: 30px;
 
   .col {
@@ -772,17 +772,142 @@ footer {
 /* SHOP PAGE BELOW */
 
 .shop {
-
   header {
     @include flexCenter(flex, column, center, center);
     background: url(./img/banner/b1.jpg) no-repeat;
     background-size: cover;
     height: 260px;
 
-
     h1,
     p {
       color: #fff;
+    }
+  }
+}
+
+.shop-ft-products {
+  padding-bottom: 0;
+}
+
+.pagination {
+  text-align: center;
+
+  padding: $lg-section-p1;
+  margin: $lg-section-m1;
+  max-width: $max-width;
+
+  a {
+    background: $accent-color2;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+
+    padding: 15px 20px;
+
+    i {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
+
+//SProduct
+.p-details {
+  @include flexCenter(flex, row, flex-start, space-between);
+
+  padding: $lg-section-p1;
+  margin-top: 74px;
+  width: 100%;
+  max-width: $max-width;
+
+  .col1 {
+    @include flexCenter(flex, column, center, center);
+
+    width: 45%;
+    gap: 5px;
+
+    .small-imgs {
+      @include flexCenter(flex, row, center, center);
+
+      gap: 5px;
+
+      .col {
+        cursor: pointer;
+        flex-basis: 24%;
+      }
+    }
+  }
+
+  .col2 {
+    width: 50%;
+    height: 100%;
+
+    h6 {
+      font-size: 13px;
+
+      margin-top: 30px;
+    }
+
+    h4 {
+      font-weight: 700;
+      font-size: 20px;
+
+      margin-top: 30px;
+    }
+
+    h2 {
+      font-size: 24px;
+
+      margin-top: 30px;
+    }
+
+    select {
+      display: block;
+      border: 1.5px solid $color1;
+      outline: none;
+      border-radius: 3px;
+
+      padding: 6px 10px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+
+      &:focus-within {
+        border-color: $accent-color2;
+        box-shadow: 0px 0px 5px rgb(8, 130, 122, 0.8);
+      }
+    }
+
+    input {
+      border-radius: 3px;
+      border: 1.5px solid $color1;
+      outline: none;
+
+      margin-right: 10px;
+      width: 50px;
+      height: 45px;
+      padding-left: 10px;
+
+      &:focus-within {
+        border-color: $accent-color2;
+        box-shadow: 0px 0px 5px rgb(8, 130, 122, 0.4);
+      }
+    }
+
+    button {
+      background: $accent-color2;
+      color: #fff;
+    }
+
+    h5 {
+      font-weight: 700;
+      font-size: 20px;
+
+      margin: 40px 0 20px 0;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 25px;
     }
   }
 }
@@ -950,21 +1075,33 @@ footer {
   }
 
   footer {
+    padding: $md-section-px;
     .col {
       flex-wrap: wrap;
     }
   }
 
-  .shop {
+  //Shop
 
+  .shop {
     header {
       @include flexCenter(flex, column, center, center);
-  
-      padding: 0px 0px;
-      height: 35vh;
+
+      padding: 150px 0px;
+      height: 0vh;
     }
   }
-  
+
+  .pagination {
+    margin: 0 0 30px 0;
+    padding: $sm-section-px;
+  }
+
+  //SProduct
+
+  .p-details {
+    padding: $md-section-px;
+  }
 } //tablets
 
 @media only screen and (width <= 600px) {
@@ -1213,22 +1350,48 @@ footer {
     }
   }
 
-  .shop {
+  //SHOP
 
+  .shop {
     header {
       @include flexCenter(flex, column, center, center);
-  
-      padding: 0px 0px;
-      height: 35vh;
+      background-position: center;
+      padding: 100px 0px;
+      height: 0;
       border: solid white;
 
-      p{
+      p {
         width: 100%;
         text-align: center;
       }
     }
   }
 
+  .pagination {
+    padding: $sm-section-px;
+    margin-bottom: 20px;
+  }
+
+  //SProduct
+  .p-details {
+    @include flexCenter(flex, column, flex-start, space-between);
+
+    padding: $sm-section-px;
+
+    .col1 {
+      width: 100%;
+    }
+
+    .col2 {
+      width: 100%;
+
+      select{
+        option{
+
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (width <= 340px) {
@@ -1258,15 +1421,14 @@ footer {
   }
 
   .shop {
-
     header {
       @include flexCenter(flex, column, center, center);
       background-position-x: -150px;
-  
+
       padding: 0px 0px;
       height: 35vh;
 
-      p{
+      p {
         text-align: center;
       }
     }
