@@ -769,7 +769,7 @@ footer {
   }
 }
 
-/* SHOP PAGE BELOW */
+// SHOP PAGE
 
 .shop {
   header {
@@ -811,7 +811,7 @@ footer {
   }
 }
 
-//SProduct
+//SProduct Page
 .p-details {
   @include flexCenter(flex, row, flex-start, space-between);
 
@@ -910,6 +910,91 @@ footer {
       line-height: 25px;
     }
   }
+}
+
+//BLOG Page
+.blog-header {
+  header {
+    background: url(./img/banner/b19.jpg) no-repeat;
+  }
+}
+
+.blog {
+  @include flexCenter(flex, column, null, null);
+
+  width: 100%;
+  padding: 150px 150px 0 150px;
+  max-width: $max-width;
+
+  .col{
+    @include flexCenter(flex, row, center, null);
+    position: relative;
+    padding-bottom: 110px;
+
+    gap: 40px;
+
+    h1{
+      font-size: 70px;
+      font-weight: 700;
+      color: #c9cbce;
+      position: absolute;
+      top: -50px;
+      left: 0;
+      z-index: -1;
+    }
+
+    .img{
+      @include flexCenter( flex, column, center, center);
+      
+      width: 50%;
+
+      img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+
+    .txt{
+      @include flexCenter(flex, column, start, center);
+
+      width: 50%;
+      gap: 20px;
+
+      h4{
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      a{
+        font-size: 11px;
+        font-weight: 700;
+        transition: .3s;
+
+        position: relative;
+
+        &:hover{
+          color: $accent-color2;
+        }
+
+        &::after{
+          content: '';
+          background: #000;
+          position: absolute;
+          top: 4px;
+          right: -60px;
+
+          width: 50px;
+          height: 1px;
+        }
+
+        &:hover::after{
+          background: $accent-color2;
+        }
+      }
+    }
+  }
+
 }
 
 //RESPONSIVENESS BELOW
@@ -1081,7 +1166,7 @@ footer {
     }
   }
 
-  //Shop
+  //Shop Page
 
   .shop {
     header {
@@ -1097,10 +1182,22 @@ footer {
     padding: $sm-section-px;
   }
 
-  //SProduct
+  //SProduct page
 
   .p-details {
     padding: $md-section-px;
+  }
+
+  .blog-header {
+    header {
+      background: url(./img/banner/b19.jpg) no-repeat;
+    }
+  }
+  
+  .blog {
+
+    padding-top: 130px;
+    padding-inline: $md-section-px; 
   }
 } //tablets
 
@@ -1350,7 +1447,7 @@ footer {
     }
   }
 
-  //SHOP
+  //SHOP Page
 
   .shop {
     header {
@@ -1372,7 +1469,7 @@ footer {
     margin-bottom: 20px;
   }
 
-  //SProduct
+  //SProduct page
   .p-details {
     @include flexCenter(flex, column, flex-start, space-between);
 
@@ -1385,13 +1482,40 @@ footer {
     .col2 {
       width: 100%;
 
-      select{
-        option{
-
+      select {
+        option {
         }
       }
     }
   }
+
+  //Blog page
+
+  .blog-header {
+    header {
+      background: url(./img/banner/b19.jpg) no-repeat;
+    }
+  }
+  
+  .blog {
+
+    padding: 150px $sm-section-px 0 $sm-section-px;
+  
+    .col{
+      @include flexCenter(flex, column, center, null);
+
+      .img{
+        width: 100%;
+      }
+  
+      .txt{
+        width: 100%;
+        
+      }
+  
+}
+
+
 }
 
 @media only screen and (width <= 340px) {
@@ -1420,6 +1544,8 @@ footer {
     }
   }
 
+  //Shop Page
+
   .shop {
     header {
       @include flexCenter(flex, column, center, center);
@@ -1431,6 +1557,13 @@ footer {
       p {
         text-align: center;
       }
+    }
+  }
+
+  //Blog Page
+  .blog-header {
+    header {
+      background-position: right 0;
     }
   }
 }
