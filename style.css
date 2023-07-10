@@ -898,6 +898,114 @@ footer .follow .socials a:hover {
   height: 100%;
 }
 
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  place-content: space-between;
+  padding: 40px 80px;
+  margin: 40px 0px;
+  width: 100%;
+  max-width: 1450px;
+}
+.contact-details .txt {
+  width: 40%;
+}
+.contact-details .txt span {
+  font-size: 12px;
+}
+.contact-details .txt h2 {
+  font-size: 24px;
+  line-height: 30px;
+  padding: 20px 0;
+}
+.contact-details .txt h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+.contact-details .txt li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 10px 0;
+}
+.contact-details .txt li ion-icon {
+  font-size: 14px;
+  padding-right: 22px;
+}
+.contact-details .txt li p {
+  font-size: 14px;
+  margin: 0;
+}
+.contact-details .map {
+  width: 55%;
+  height: 400px;
+}
+.contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.form-details {
+  display: flex;
+  flex-direction: row;
+  place-content: space-between;
+  border: 1px solid #e1e1e1;
+  padding: 80px;
+  margin-block: 30px;
+  max-width: 1450px;
+  width: 96%;
+}
+.form-details form {
+  display: flex;
+  flex-direction: column;
+  place-items: flex-start;
+  width: 65%;
+}
+.form-details form span {
+  font-size: 12px;
+}
+.form-details form h2 {
+  font-size: 24px;
+  line-height: 30px;
+  padding: 20px 0;
+}
+.form-details form input,
+.form-details form textarea {
+  outline: none;
+  border: solid #e1e1e1;
+  resize: none;
+  margin-bottom: 20px;
+  padding: 20px 15px;
+  width: 100%;
+}
+.form-details form button {
+  background: #088178;
+  color: #fff;
+}
+.form-details .people div {
+  display: flex;
+  place-items: flex-start;
+  padding-bottom: 25px;
+}
+.form-details .people div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 65px;
+  height: 65px;
+  margin-right: 15px;
+}
+.form-details .people div p {
+  font-size: 13px;
+  line-height: 25px;
+  margin: 0;
+}
+.form-details .people div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
 @media only screen and (width < 1280px) {
   .s1 header {
     background-size: cover;
@@ -1116,6 +1224,12 @@ footer .follow .socials a:hover {
   }
   .about-app .video {
     width: 65%;
+  }
+  .form-details {
+    padding: 40px;
+  }
+  .form-details form {
+    width: 50%;
   }
 }
 @media only screen and (width <= 600px) {
@@ -1449,6 +1563,24 @@ footer .follow .socials a:hover {
   }
   .about-app .video {
     width: 100%;
+  }
+  .contact-details {
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  .contact-details .txt,
+  .contact-details .map {
+    width: 100%;
+  }
+  .form-details {
+    flex-wrap: wrap;
+    padding: 30px 10px;
+    margin-block: 10px;
+  }
+  .form-details form {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (width <= 340px) {

@@ -1068,6 +1068,139 @@ footer {
   }
 }
 
+//Contact Page
+
+.contact-details {
+  @include flexCenter(flex, row, null, space-between);
+
+  padding: $lg-section-p1;
+  margin: $lg-section-m1;
+  width: 100%;
+  max-width: $max-width;
+
+  .txt {
+    width: 40%;
+
+    span {
+      font-size: 12px;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 30px;
+
+      padding: 20px 0;
+    }
+
+    h3 {
+      font-size: 16px;
+
+      padding-bottom: 15px;
+    }
+
+    li {
+      @include flexCenter(flex, row, null, null);
+      list-style: none;
+
+      padding: 10px 0;
+
+      ion-icon {
+        font-size: 14px;
+
+        padding-right: 22px;
+      }
+
+      p {
+        font-size: 14px;
+
+        margin: 0;
+      }
+    }
+  }
+
+  .map {
+    width: 55%;
+    height: 400px;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.form-details {
+  @include flexCenter(flex, row, null, space-between);
+  border: 1px solid #e1e1e1;
+
+  padding: 80px;
+  margin-block: 30px;
+  max-width: $max-width;
+  width: 96%;
+
+  form {
+    @include flexCenter(flex, column, flex-start, null);
+
+    width: 65%;
+
+    span {
+      font-size: 12px;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 30px;
+
+      padding: 20px 0;
+    }
+
+    input,
+    textarea {
+      outline: none;
+      border: solid #e1e1e1;
+      resize: none;
+
+      margin-bottom: 20px;
+      padding: 20px 15px;
+      width: 100%;
+    }
+
+    button {
+      background: $accent-color2;
+      color: #fff;
+    }
+  }
+
+  .people {
+    div {
+      @include flexCenter(flex, null, flex-start, null);
+      padding-bottom: 25px;
+
+      img {
+        object-fit: cover;
+
+        width: 65px;
+        height: 65px;
+        margin-right: 15px;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 25px;
+
+        margin: 0;
+
+        span {
+          display: block;
+          font-size: 16px;
+          font-weight: 600;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
 //RESPONSIVENESS BELOW
 
 @media only screen and (width < 1280px) {
@@ -1300,6 +1433,15 @@ footer {
     .video {
       width: 65%;
     }
+  }
+
+  //Contact Page
+  .form-details {
+    padding: 40px;
+  }
+
+  .form-details form {
+    width: 50%;
   }
 } //tablets
 
@@ -1615,49 +1757,70 @@ footer {
     }
   }
 
-    //About Page
+  //About Page
 
-    .about-head {
-      @include flexCenter(flex, column, center, null);
-  
-      padding: $sm-section-px;
-  
-      img {
-        width: 100%;
-        height: auto;
+  .about-head {
+    @include flexCenter(flex, column, center, null);
+
+    padding: $sm-section-px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .txt {
+      width: 100%;
+
+      h2 {
+        font-size: 40px;
+        place-self: center;
       }
-  
-      .txt {
-        width: 100%;
 
-        h2{
-          font-size: 40px;
-          place-self: center;
-        }
+      p {
+        font-size: 12px;
+      }
 
-        p{
-          font-size: 12px;
-        }
-
-        abbr{
-          font-size: 12px;
-        }
+      abbr {
+        font-size: 12px;
       }
     }
-  
-    .about-app {
-      text-align: center;
+  }
 
-      padding: $sm-section-px;
-  
-      h1 {
-        // font-size: 40px;
-      }
-  
-      .video {
-        width: 100%;
-      }
+  .about-app {
+    text-align: center;
+
+    padding: $sm-section-px;
+
+    .video {
+      width: 100%;
     }
+  }
+
+  //Contact Page
+
+  .contact-details {
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: $sm-section-px;
+
+    .txt,
+    .map {
+      width: 100%;
+    }
+  }
+
+  .form-details {
+    flex-wrap: wrap;
+
+    padding: 30px 10px;
+    margin-block: 10px;
+
+    form {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 @media only screen and (width <= 340px) {
