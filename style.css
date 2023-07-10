@@ -842,6 +842,62 @@ footer .follow .socials a:hover {
   background: #088178;
 }
 
+.about header {
+  background: url(./img/about/banner.png) no-repeat;
+  background-size: cover;
+}
+
+.about-head {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  gap: 40px;
+  padding: 40px 80px;
+}
+.about-head img {
+  width: 50%;
+  height: auto;
+}
+.about-head .txt {
+  display: flex;
+  flex-direction: column;
+  place-items: flex-start;
+  width: 50%;
+}
+.about-head .txt h2 {
+  font-size: 48px;
+}
+.about-head .txt p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 15px;
+}
+.about-head .txt abbr {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.about-app {
+  text-align: center;
+  margin: 40px 0px;
+  width: 100%;
+  max-width: 1450px;
+}
+.about-app h1 a {
+  text-decoration: underline;
+  color: #0000ff;
+}
+.about-app .video {
+  margin: 30px auto 0 auto;
+  width: 70%;
+  height: 100%;
+}
+.about-app .video video {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (width < 1280px) {
   .s1 header {
     background-size: cover;
@@ -1037,6 +1093,29 @@ footer .follow .socials a:hover {
   .blog {
     padding-top: 130px;
     padding-inline: 40px;
+  }
+  .about-head {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 40px;
+  }
+  .about-head img {
+    width: 100%;
+    height: auto;
+  }
+  .about-head .txt {
+    width: 100%;
+  }
+  .about-app {
+    text-align: center;
+  }
+  .about-app h1 a {
+    text-decoration: underline;
+    color: #0000ff;
+  }
+  .about-app .video {
+    width: 65%;
   }
 }
 @media only screen and (width <= 600px) {
@@ -1328,68 +1407,48 @@ footer .follow .socials a:hover {
     background: url(./img/banner/b19.jpg) no-repeat;
   }
   .blog {
-    display: flex;
-    flex-direction: column;
     padding: 150px 10px 0 10px;
   }
   .blog .col {
     display: flex;
     flex-direction: column;
     place-items: center;
-    position: relative;
-    padding-bottom: 110px;
-    gap: 40px;
-  }
-  .blog .col h1 {
-    font-size: 70px;
-    font-weight: 700;
-    color: #c9cbce;
-    position: absolute;
-    top: -55px;
-    left: 0;
-    z-index: -1;
   }
   .blog .col .img {
     width: 100%;
   }
-  .blog .col .img img {
-    width: 100%;
-    height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .blog .col .txt {
+    width: 100%;
+  }
+  .about-head {
     display: flex;
     flex-direction: column;
-    place-items: start;
-    place-content: center;
+    place-items: center;
+    padding: 10px;
+  }
+  .about-head img {
     width: 100%;
-    gap: 20px;
+    height: auto;
   }
-  .blog .col .txt h4 {
-    font-size: 20px;
-    font-weight: 700;
+  .about-head .txt {
+    width: 100%;
   }
-  .blog .col .txt a {
-    font-size: 11px;
-    font-weight: 700;
-    transition: 0.3s;
-    position: relative;
+  .about-head .txt h2 {
+    font-size: 40px;
+    place-self: center;
   }
-  .blog .col .txt a:hover {
-    color: #088178;
+  .about-head .txt p {
+    font-size: 12px;
   }
-  .blog .col .txt a::after {
-    content: "";
-    background: #000;
-    position: absolute;
-    top: 4px;
-    right: -60px;
-    width: 50px;
-    height: 1px;
+  .about-head .txt abbr {
+    font-size: 12px;
   }
-  .blog .col .txt a:hover::after {
-    background: #088178;
+  .about-app {
+    text-align: center;
+    padding: 10px;
+  }
+  .about-app .video {
+    width: 100%;
   }
 }
 @media only screen and (width <= 340px) {

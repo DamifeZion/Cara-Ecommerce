@@ -926,14 +926,14 @@ footer {
   padding: 150px 150px 0 150px;
   max-width: $max-width;
 
-  .col{
+  .col {
     @include flexCenter(flex, row, center, null);
     position: relative;
     padding-bottom: 110px;
 
     gap: 40px;
 
-    h1{
+    h1 {
       font-size: 70px;
       font-weight: 700;
       color: #c9cbce;
@@ -943,42 +943,42 @@ footer {
       z-index: -1;
     }
 
-    .img{
-      @include flexCenter( flex, column, center, center);
-      
+    .img {
+      @include flexCenter(flex, column, center, center);
+
       width: 50%;
 
-      img{
+      img {
         width: 100%;
         height: 300px;
         object-fit: cover;
       }
     }
 
-    .txt{
+    .txt {
       @include flexCenter(flex, column, start, center);
 
       width: 50%;
       gap: 20px;
 
-      h4{
+      h4 {
         font-size: 20px;
         font-weight: 700;
       }
 
-      a{
+      a {
         font-size: 11px;
         font-weight: 700;
-        transition: .3s;
+        transition: 0.3s;
 
         position: relative;
 
-        &:hover{
+        &:hover {
           color: $accent-color2;
         }
 
-        &::after{
-          content: '';
+        &::after {
+          content: "";
           background: #000;
           position: absolute;
           top: 4px;
@@ -988,13 +988,84 @@ footer {
           height: 1px;
         }
 
-        &:hover::after{
+        &:hover::after {
           background: $accent-color2;
         }
       }
     }
   }
+}
 
+//About Page
+
+.about {
+  header {
+    background: url(./img/about/banner.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+.about-head {
+  @include flexCenter(flex, row, center, null);
+
+  gap: 40px;
+  padding: $lg-section-p1;
+
+  img {
+    width: 50%;
+    height: auto;
+  }
+
+  .txt {
+    @include flexCenter(flex, column, flex-start, null);
+
+    width: 50%;
+
+    h2 {
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+
+      margin-top: 15px;
+    }
+
+    abbr {
+      font-size: 14px;
+
+      margin-top: 15px;
+    }
+  }
+}
+
+.about-app {
+  text-align: center;
+
+  margin: $lg-section-m1;
+  width: 100%;
+  max-width: $max-width;
+
+  h1 {
+    a {
+      text-decoration: underline;
+      color: #0000ff;
+    }
+  }
+
+  .video {
+    margin: 30px auto 0 auto;
+    width: 70%;
+    height: 100%;
+
+    video {
+      border-radius: 20px;
+
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 //RESPONSIVENESS BELOW
@@ -1193,11 +1264,42 @@ footer {
       background: url(./img/banner/b19.jpg) no-repeat;
     }
   }
-  
-  .blog {
 
+  .blog {
     padding-top: 130px;
-    padding-inline: $md-section-px; 
+    padding-inline: $md-section-px;
+  }
+
+  //About Page
+
+  .about-head {
+    @include flexCenter(flex, column, center, null);
+
+    padding: $md-section-px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .txt {
+      width: 100%;
+    }
+  }
+
+  .about-app {
+    text-align: center;
+
+    h1 {
+      a {
+        text-decoration: underline;
+        color: #0000ff;
+      }
+    }
+
+    .video {
+      width: 65%;
+    }
   }
 } //tablets
 
@@ -1496,26 +1598,66 @@ footer {
       background: url(./img/banner/b19.jpg) no-repeat;
     }
   }
-  
-  .blog {
 
+  .blog {
     padding: 150px $sm-section-px 0 $sm-section-px;
-  
-    .col{
+
+    .col {
       @include flexCenter(flex, column, center, null);
 
-      .img{
+      .img {
         width: 100%;
       }
-  
-      .txt{
+
+      .txt {
         width: 100%;
-        
+      }
+    }
+  }
+
+    //About Page
+
+    .about-head {
+      @include flexCenter(flex, column, center, null);
+  
+      padding: $sm-section-px;
+  
+      img {
+        width: 100%;
+        height: auto;
       }
   
-}
+      .txt {
+        width: 100%;
 
+        h2{
+          font-size: 40px;
+          place-self: center;
+        }
 
+        p{
+          font-size: 12px;
+        }
+
+        abbr{
+          font-size: 12px;
+        }
+      }
+    }
+  
+    .about-app {
+      text-align: center;
+
+      padding: $sm-section-px;
+  
+      h1 {
+        // font-size: 40px;
+      }
+  
+      .video {
+        width: 100%;
+      }
+    }
 }
 
 @media only screen and (width <= 340px) {
