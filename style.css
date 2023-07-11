@@ -1006,6 +1006,112 @@ footer .follow .socials a:hover {
   color: #000;
 }
 
+.cart {
+  padding: 40px 80px;
+  width: 100%;
+  max-width: 1450px;
+}
+.cart table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  white-space: nowrap;
+  width: 100%;
+}
+.cart table img {
+  width: 70px;
+}
+.cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+.cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+.cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+.cart table td:nth-child(4),
+.cart table td:nth-child(5),
+.cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+.cart table td:nth-child(5) input {
+  border: solid #e2e9e1;
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+.cart table thead {
+  border: solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+.cart table thead tr td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+.cart table tbody td {
+  font-size: 13px;
+  padding-top: 15px;
+}
+
+.cart-add {
+  display: flex;
+  place-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1450px;
+  padding: 40px 80px;
+}
+.cart-add .coupon {
+  width: 50%;
+  margin-bottom: 30px;
+}
+.cart-add .coupon h3 {
+  padding-bottom: 15px;
+}
+.cart-add .coupon input {
+  border: solid #e2e9e1;
+  outline: none;
+  padding: 12px 20px;
+  width: 60%;
+  margin-right: 10px;
+}
+.cart-add .coupon button {
+  background: #088178;
+  color: white;
+  padding-bottom: 12px;
+}
+.cart-add .subtotal {
+  border: solid #e2e9e1;
+  padding: 30px;
+  width: 50%;
+  margin-bottom: 30px;
+}
+.cart-add .subtotal h3 {
+  padding-bottom: 15px;
+}
+.cart-add .subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.cart-add .subtotal td {
+  font-size: 13px;
+  border: solid #e2e9e1;
+  width: 50%;
+  padding: 10px;
+}
+.cart-add button {
+  background: #088178;
+  color: white;
+  padding-bottom: 12px;
+}
+
 @media only screen and (width < 1280px) {
   .s1 header {
     background-size: cover;
@@ -1230,6 +1336,16 @@ footer .follow .socials a:hover {
   }
   .form-details form {
     width: 50%;
+  }
+  .cart {
+    overflow-x: auto;
+    padding: 40px;
+  }
+  .cart::-webkit-scrollbar {
+    display: none;
+  }
+  .cart-add {
+    padding: 40px;
   }
 }
 @media only screen and (width <= 600px) {
@@ -1581,6 +1697,19 @@ footer .follow .socials a:hover {
   .form-details form {
     width: 100%;
     margin-bottom: 30px;
+  }
+  .cart {
+    padding: 10px;
+  }
+  .cart-add {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .cart-add .coupon {
+    margin-top: 30px;
+  }
+  .cart-add .coupon, .cart-add .subtotal {
+    width: 100%;
   }
 }
 @media only screen and (width <= 340px) {

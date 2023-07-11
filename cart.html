@@ -1,22 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  <!DOCTYPE html>
+  <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>ZION: Cara Ecommerce</title>
+      <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      />
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
-        <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
+      <main class="main">
+        <nav id="header">
+          <img class="logo" src="/img/logo.png" alt="" />
 
+          <ion-icon class="menu" name="grid-outline"></ion-icon>
 
-        <script src="script.js"></script>
+          <div class="nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a href="cart.html" class="active">
+                  <ion-icon name="bag-outline"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </main>
 
+      <section class="s1 shop about">
+        <header>
+          <h1>#let's_talk</h1>
+          <p>LEAVE A MESSAGE, We love to hear from you!</p>
+        </header>
+      </section>
+
+      <section>
+        <div class="cart">
+          <table width="100%">
+            <thead>
+              <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <a href="#"
+                    ><ion-icon name="close-circle-outline"></ion-icon
+                  ></a>
+                </td>
+                <td><img src="img/products/f1.jpg" alt="" /></td>
+                <td>Cartoon Astronaut T-Shirts</td>
+                <td>$118.19</td>
+                <td><input type="number" value="1" /></td>
+                <td>$118.19</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="#"
+                    ><ion-icon name="close-circle-outline"></ion-icon
+                  ></a>
+                </td>
+                <td><img src="img/products/f2.jpg" alt="" /></td>
+                <td>Astronaut T-Shirts</td>
+                <td>$58.49</td>
+                <td><input type="number" value="1" /></td>
+                <td>$58.49</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="#"
+                    ><ion-icon name="close-circle-outline"></ion-icon
+                  ></a>
+                </td>
+                <td><img src="img/products/f3.jpg" alt="" /></td>
+                <td>Cartoon T-Shirts</td>
+                <td>$84.38</td>
+                <td><input type="number" value="1" /></td>
+                <td>$84.38</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <div class="cart-add">
+          <div class="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+              <input type="text" placeholder="Enter Your Coupon" />
+              <button class="normal">Apply</button>
+            </div>
+          </div>
+
+          <div class="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+              <tr>
+                <td>Cart Subtotal</td>
+                <td>$ 335</td>
+              </tr>
+              <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>$ 335</strong></td>
+              </tr>
+            </table>
+            <button class="normal">Proceed To Checkout</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="s6">
+        <div class="newsletter">
+          <div class="txt">
+            <h1>Sign Up For Newsletters</h1>
+            <p>
+              Get E-mail updates about our latest shop and
+              <span>special offers</span>.
+            </p>
+          </div>
+
+          <div class="input">
+            <input type="email" placeholder="Your email address" />
+            <button class="normal">Sign Up</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <footer>
+          <div class="col">
+            <div class="i">
+              <img class="logo" src="./img/logo.png" alt="" />
+
+              <h4>Contact</h4>
+
+              <h5>
+                <strong>Address:</strong> Iponri Estate Road, Lagos, Surulere
+              </h5>
+              <h5>
+                <strong>Phone:</strong> +234 807 6568 689/+234 814 2500 816
+              </h5>
+              <h5><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</h5>
+            </div>
+
+            <div class="i ii">
+              <h4>About</h4>
+
+              <a href=""><h5>About Us</h5></a>
+              <a href=""><h5>Delivery Information</h5></a>
+              <a href=""><h5>Privacy Policy</h5></a>
+              <a href=""><h5>Terms & Conditions</h5></a>
+              <a href=""><h5>Contact Us</h5></a>
+            </div>
+
+            <div class="i iii">
+              <h4>My Account</h4>
+
+              <a href=""><h5>Sign In</h5></a>
+              <a href=""><h5>View Cart</h5></a>
+              <a href=""><h5>My Wishlist</h5></a>
+              <a href=""><h5>Track My Order</h5></a>
+              <a href=""><h5>Help</h5></a>
+            </div>
+
+            <div class="i iv">
+              <h4>Install App</h4>
+
+              <a href=""><h5>From App Store or Google Play</h5></a>
+
+              <div class="store">
+                <a href="" class="app">
+                  <img src="./img/pay/app.jpg" alt="" />
+                </a>
+                <a href="" class="play">
+                  <img src="./img/pay/play.jpg" alt="" />
+                </a>
+              </div>
+
+              <a href=""><h5>Secure Payment Gateways</h5></a>
+
+              <div class="pay">
+                <img src="./img/pay/pay.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="follow">
+            <h4>Follow Us</h4>
+
+            <div class="socials">
+              <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href=""><ion-icon name="logo-pinterest"></ion-icon></a>
+              <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+            </div>
+          </div>
+
+          <small>@2023 DamifeZion -HTML SCSS Ecommerce Template</small>
+        </footer>
+      </section>
+
+      <script src="script.js"></script>
+
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
     </body>
-
+  </html>
 </html>
